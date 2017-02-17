@@ -21,7 +21,7 @@
  * @copyright  2014 Justin Belec
  * @license    http://www.gnu.org/licenses/gpl-3.0.txt  GNU General Public License v.3
  * @version    0.3.0 [ALPHA]
- * @link       https://sourceforge.net/p/evetools/
+ * @link       https://github.com/belecjm/eve-php/
  * @abstract
  *
  * @todo
@@ -41,11 +41,8 @@ abstract class LibEve {
      * Class constants
      */
     const SERVER_ROOT = "https://api.eveonline.com";
-
     const SERVER_DOMAIN = "api.eveonline.com";
-
     const SERVER_PORT = "443";
-
     const CONNECTION_TIMEOUT = 2;
 
     const QUERY_TIMEOUT = 4;
@@ -60,13 +57,6 @@ abstract class LibEve {
      * Constructor
      *
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final function __construct() {
 
@@ -84,13 +74,6 @@ abstract class LibEve {
      * @param integer $keyID
      * @param string $vCode
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function setupAPI( $keyID, $vCode ) {
 
@@ -107,13 +90,6 @@ abstract class LibEve {
      *
      * @return integer
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function getKeyID() {
 
@@ -125,13 +101,6 @@ abstract class LibEve {
      *
      * @return string
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function getVCode() {
 
@@ -148,13 +117,6 @@ abstract class LibEve {
      * @param integer $keyID
      * @throws LibEveException
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function setKeyID( $keyID ) {
 
@@ -170,13 +132,6 @@ abstract class LibEve {
      * @param string $vCode
      * @throws LibEveException
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function setVCode( $vCode ) {
 
@@ -200,13 +155,6 @@ abstract class LibEve {
      * @throws LibEveException
      * @return SimpleXMLElement
      * @final
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      */
     final public function xmlRequest( $path, $vars = array() ) {
 
